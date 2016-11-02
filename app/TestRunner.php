@@ -96,7 +96,7 @@ class TestRunner extends \phpQuery
      * @return mixed
      * @throws \Exception
      */
-    public function exists($string, $expected = 1) {
+    public function existsInBody($string, $expected = 1) {
         $count = substr_count($this->responseBody, $string);
         if ($count != $expected) {
             throw new \Exception($string . ' exists by count of ' . $count);
@@ -111,7 +111,7 @@ class TestRunner extends \phpQuery
      * @return string
      * @throws \Exception
      */
-    public function existsByRegEx($regEx, $expected = 1) {
+    public function existsInBodyByRegEx($regEx, $expected = 1) {
         $count = preg_match_all($regEx, $this->responseBody);
         if ($count != $expected) {
             throw new \Exception($regEx . ' exists by count of ' . $count);

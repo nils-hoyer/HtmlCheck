@@ -59,13 +59,13 @@ class ExampleTest extends \App\TestCase
     public function testExists()
     {
         $this->html->requestPath($this->path);
-        $this->html->exists("<b>confidence testing</b>");
+        $this->html->existsInBody("<b>confidence testing</b>");
     }
 
     public function testExistsByRegEx()
     {
         $this->html->requestPath($this->path);
-        $this->html->existsByRegEx("/func.*ns/", 5);
+        $this->html->existsInBodyByRegEx("/func.*ns/", 5);
     }
 
     public function testExistsInHeader()
