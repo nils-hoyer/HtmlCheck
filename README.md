@@ -26,7 +26,19 @@ or
 * selectorTextExistsByRegex(selector, regEx, 0) //not exists
 * selectorTextExistsByRegex(selector, regEx, 5)
 * existsInBody(string) //exists
+* existsInBody(string) //exists
 * existsInBody(string, 0) //not exists
 * existsInBody(string, 5)
 * existsInBodyByRegEx(regEx) //exists
 * existsInBodyByRegEx(regEx, 0) //not exists
+* existsInBodyByRegEx(regEx, 5)
+* existsInHeader(string) //exists
+* existsInHeader(string, 0) //not exists
+* existsInHeader(string, 5)
+* existsInHeaderByRegEx(regEx) //exists
+* existsInHeaderByRegEx(regEx, 0) //not exists
+* existsInHeaderByRegEx(regEx, 5)
+* requestPath(path) //expect 200 httpcode
+* requestPath(path, 301)
+* getResponseBody()
+* getResponseHeader()
