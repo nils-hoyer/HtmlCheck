@@ -26,7 +26,6 @@ or
 * selectorTextExistsByRegex(selector, regEx, 0) //not exists
 * selectorTextExistsByRegex(selector, regEx, 5)
 * existsInBody(string) //exists
-* existsInBody(string) //exists
 * existsInBody(string, 0) //not exists
 * existsInBody(string, 5)
 * existsInBodyByRegEx(regEx) //exists
