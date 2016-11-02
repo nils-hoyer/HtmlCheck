@@ -1,0 +1,29 @@
+{
+  "name": "HtmlCheck",
+  "description": "HtmlCheck",
+  "version": "0.1",
+  "keywords": [
+    "HtmlCheck",
+    "Testing"
+  ],
+  "license": "MIT",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Nils Hoyer",
+      "email": "hoyer.nils@gmail.com",
+      "homepage": "https://github.com/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4",
+    "phpunit/phpunit": "5.5.*",
+    "electrolinux/phpquery": "0.9.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
